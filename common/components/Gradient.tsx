@@ -3,9 +3,11 @@ import React from "react";
 
 import s from "./Gradient.module.scss";
 
-const Gradient = ({ children }) => {
-  const variants = {};
+type Props = {
+  children: JSX.Element;
+};
 
+const Gradient = ({ children }: Props) => {
   return (
     <m.div className={s.gradientContainer}>
       <m.div className={s.gradientOverlay} />

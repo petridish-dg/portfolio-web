@@ -2,7 +2,11 @@ import React from "react";
 
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+type Props = {
+  children: JSX.Element;
+};
+
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Navbar />
