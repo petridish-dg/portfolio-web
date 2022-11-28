@@ -1,0 +1,21 @@
+@import "variables";
+@import url("https://use.typekit.net/wdw5vaa.css");
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+::selection {
+  background-color: $color-text;
+  color: $color-background;
+}
+
+// Typography
+
+h1 {
+  font-size: 6rem;
+  line-height: 1;
+}
