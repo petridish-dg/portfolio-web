@@ -25,6 +25,12 @@
 
   .heroHead {
     text-align: center;
+
+    transition: filter 1s;
+
+    &:hover {
+      filter: blur(20px);
+    }
   }
 
   .heroSubHead {
@@ -44,4 +50,7 @@
 
 .heroContent {
   font-family: neue-haas-grotesk-display, sans-serif;
+
+  display: flex;
+  justify-content: flex-end;
 }

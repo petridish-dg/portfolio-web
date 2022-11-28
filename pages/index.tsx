@@ -1,5 +1,7 @@
+import { motion as m } from "framer-motion";
 import React from "react";
 
+import Gradient from "../common/components/Gradient";
 import s from "/styles/Home.module.scss";
 
 const Home = () => {
@@ -23,11 +25,14 @@ const Home = () => {
             <p>SCROLL TO EXPLORE ¬</p>
           </div>
           <div className={s.heroWrapper}>
-            <p className={s.heroP}>
-              PETER DE GUZMAN IS A FREELANCE GRAPHIC ARTIST LOCATED IN CHICAGO,
-              IL. I’M A CURIOUS CREATIVE READY TO TINKER WITH THE NORMS AS WE
-              BUILD IMPACTFUL, HIGH-CRAFT WORK FOR ALL WALKS OF LIFE.
-            </p>
+            <Gradient>
+              <p className={s.heroP}>
+                PETER DE GUZMAN IS A FREELANCE GRAPHIC ARTIST LOCATED IN
+                CHICAGO, IL. I’M A CURIOUS CREATIVE READY TO TINKER WITH THE
+                NORMS AS WE BUILD IMPACTFUL, HIGH-CRAFT WORK FOR ALL WALKS OF
+                LIFE.
+              </p>
+            </Gradient>
           </div>
         </div>
       </section>
