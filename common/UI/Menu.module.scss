@@ -14,7 +14,10 @@
 
 .menuButtonInner {
   position: absolute;
-  transform-origin: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   height: 0px;
   width: 0px;
   border: 2px solid $color-text;
@@ -29,9 +32,12 @@
 
 .menuCross:first-of-type {
   height: 100%;
+  
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   width: 2px;
   background-color: $color-text;
-  margin: 0 auto;
 }
 
 .menuCross:nth-of-type(2) {
