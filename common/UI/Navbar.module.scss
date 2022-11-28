@@ -8,10 +8,9 @@
 
   width: 100%;
   padding: $padding-global;
-
-
 }
 
-.menuButton {
-  cursor: pointer;
+.navWrapper:first-of-type {
+  display: flex;
+  gap: 1rem;
 }

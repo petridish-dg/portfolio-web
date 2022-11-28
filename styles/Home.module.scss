@@ -1,7 +1,7 @@
 @import "/styles/variables.scss";
 
 .heroSection {
-  height: 100vh;
+  height: 95vh;
 
   padding: $padding-global;
 }
@@ -12,18 +12,25 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  .heroWrapper:first-of-type {
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  gap: 1.5rem;
 }
 
-.heroIntro {
-  text-align: center;
+.heroWrapper:first-of-type {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heroHead {
+    text-align: center;
+  }
+
+  .heroSubHead {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
 
 .heroP {
@@ -31,7 +38,10 @@
 
   margin: 0 auto;
 
-  font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.heroContent {
+  font-family: neue-haas-grotesk-display, sans-serif;
 }

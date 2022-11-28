@@ -1,0 +1,43 @@
+@import "/styles/variables.scss";
+
+.menuButton {
+  height: 35px;
+  width: 35px;
+
+  cursor: pointer;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuButtonInner {
+  position: absolute;
+  transform-origin: center;
+  height: 0px;
+  width: 0px;
+  border: 2px solid $color-text;
+  border-radius: 2rem;
+}
+
+.crossContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.menuCross:first-of-type {
+  height: 100%;
+  width: 2px;
+  background-color: $color-text;
+  margin: 0 auto;
+}
+
+.menuCross:nth-of-type(2) {
+  position: relative;
+  top: calc(-50% - 1px);
+  height: 2px;
+  width: 100%;
+  background-color: $color-text;
+}
