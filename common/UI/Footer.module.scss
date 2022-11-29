@@ -1,0 +1,12 @@
+@import "/styles/variables.scss";
+
+.footerContainer {
+  padding: $padding-global;
+}
+
+.footerWrapper {
+  height: 40rem;
+
+  border: 2px solid $color-text;
+  border-radius: 1rem;
+}

@@ -16,23 +16,28 @@ const Home = () => {
               FREELANCE GRAPHIC ARTIST
             </h1>
             <h2 className={s.heroSubHead}>
-              Chaotic, Daring,
+              Powered by Curiosity,
               <br />
-              But Above All, Incisive.
+              Driven by Design.
             </h2>
           </div>
           <div className={s.heroContent}>
             <p>SCROLL TO EXPLORE ¬</p>
           </div>
           <div className={s.heroWrapper}>
-            <Gradient>
-              <p className={s.heroP}>
-                PETER DE GUZMAN IS A FREELANCE GRAPHIC ARTIST LOCATED IN
-                CHICAGO, IL. I’M A CURIOUS CREATIVE READY TO TINKER WITH THE
-                NORMS AS WE BUILD IMPACTFUL, HIGH-CRAFT WORK FOR ALL WALKS OF
-                LIFE.
-              </p>
-            </Gradient>
+            <div className={s.heroPContainer}>
+              <div className={s.heroPWrapper}>
+                <Gradient>
+                  <p className={s.heroP}>
+                    PETER DE GUZMAN IS A FREELANCE GRAPHIC ARTIST LOCATED IN
+                    CHICAGO, IL.
+                    <br />
+                    I’M A CURIOUS CREATIVE READY TO TINKER WITH THE NORMS AS WE
+                    BUILD IMPACTFUL, HIGH-CRAFT WORK FOR ALL WALKS OF LIFE.
+                  </p>
+                </Gradient>
+              </div>
+            </div>
           </div>
         </div>
       </section>
