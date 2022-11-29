@@ -19,7 +19,6 @@ const Navbar = () => {
             duration: 10,
             repeatDelay: 0,
           }}
-          className={s.logo}
         >
           <Image src={globe} alt="globe icon" fill={true} />
         </m.div>
