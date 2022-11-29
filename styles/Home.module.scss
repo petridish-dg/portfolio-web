@@ -1,9 +1,35 @@
 @import "/styles/variables.scss";
 
 .heroSection {
-  height: 90vh;
+  height: 95vh;
 
   padding: $padding-global;
+
+  position: relative;
+
+  ::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    z-index: -10;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/grid.svg");
+    background-repeat: repeat;
+    background-size: 100px;
+
+    opacity: 0.025;
+  }
+
+  h1 {
+    cursor: crosshair;
+  }
 }
 
 .heroContainer {
@@ -46,11 +72,14 @@
 
 .heroPContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 2rem;
+  align-items: center;
 }
 
 .heroPWrapper {
-   padding: $padding-global;
+  padding: $padding-global;
 
   text-align: center;
   text-transform: uppercase;
@@ -58,17 +87,33 @@
   border: 2px solid $color-text;
   border-radius: 1rem;
 
+  // background-color: $color-background;
 }
 
 .heroP {
   max-width: 80ch;
-
- 
 }
 
 .heroContent {
   font-family: neue-haas-grotesk-display, sans-serif;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  .contentP {
+    flex: 1;
+
+    text-align: center;
+
+    display: flex;
+    align-items: flex-end;
+
+    &:nth-of-type(2) {
+      justify-content: center;
+    }
+
+    &:nth-of-type(3) {
+      justify-content: flex-end;
+    }
+  }
 }

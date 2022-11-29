@@ -13,7 +13,7 @@ const Home = () => {
             <h1 className={s.heroHead}>
               I&#39;M PETER DE GUZMAN
               <br />
-              FREELANCE GRAPHIC ARTIST
+              MULTIDISCIPLINARY DESIGNER
             </h1>
             <h2 className={s.heroSubHead}>
               Powered by Curiosity,
@@ -22,21 +22,33 @@ const Home = () => {
             </h2>
           </div>
           <div className={s.heroContent}>
-            <p>SCROLL TO EXPLORE ¬</p>
+            <div className={s.contentP}>
+              <p>CHICAGO, IL.</p>
+            </div>
+            <div className={s.contentP}>
+              <p>
+                PORTFOLIO
+                <br />
+                (2020 — 2022)
+              </p>
+            </div>
+            <div className={s.contentP}>
+              <p>SCROLL TO EXPLORE ¬</p>
+            </div>
           </div>
           <div className={s.heroWrapper}>
             <div className={s.heroPContainer}>
               <div className={s.heroPWrapper}>
                 <Gradient>
                   <p className={s.heroP}>
-                    PETER DE GUZMAN IS A FREELANCE GRAPHIC ARTIST LOCATED IN
-                    CHICAGO, IL.
-                    <br />
-                    I’M A CURIOUS CREATIVE READY TO TINKER WITH THE NORMS AS WE
-                    BUILD IMPACTFUL, HIGH-CRAFT WORK FOR ALL WALKS OF LIFE.
+                    I’M PASSIONATE ABOUT HUMAN AND DESIGN INTERACTION, NOT
+                    LIMITED TO ONE MEDIUM OR ANOTHER. I LOVE WORKING AT THE
+                    INTERSECTION OF CREATIVITY AND SEAMLESS INTEGRATION THROUGH
+                    BOTH DIGITAL AND PRINT PRODUCTS.
                   </p>
                 </Gradient>
               </div>
+              <p>© COPYRIGHT 2022</p>
             </div>
           </div>
         </div>
