@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 import s from "./Menu.module.scss";
+import crossButton from "/public/cross.svg";
 
 const Menu = () => {
   const cross = {
@@ -10,31 +11,6 @@ const Menu = () => {
       rotate: 135,
     },
   };
-
-  // const innerCross = {
-  //   initial: {
-  //     height: 20,
-  //     width: 20,
-  //   },
-  //   idle: {
-  //     height: 10,
-  //     width: 10,
-  //     transition: {
-  //       repeat: Infinity,
-  //       repeatType: "reverse",
-  //       duration: 1.5,
-  //       ease: "easeInOut",
-  //     },
-  //   },
-  //   onhover: {
-  //     height: 20,
-  //     width: 20,
-  //   },
-  //   focus: {
-  //     height: 15,
-  //     width: 15,
-  //   },
-  // };
 
   const [cycle, setCycle] = useCycle(true, false);
   const [cycleClick, setCycleClick] = useCycle(false, true);
@@ -52,8 +28,7 @@ const Menu = () => {
       onTap={() => setCycleClick}
     >
       <m.div className={s.crossContainer}>
-        <div className={s.menuCross}></div>
-        <div className={s.menuCross}></div>
+        <Image src={crossButton} alt="cross icon" fill={true} />
       </m.div>
       <m.div
         className={s.menuButtonInner}
