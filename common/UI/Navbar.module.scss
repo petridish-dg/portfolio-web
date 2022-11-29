@@ -12,10 +12,12 @@
 
 .navWrapper:first-of-type {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1rem;
 }
 
-.logo {
+.navLogo {
+  position: relative;
   height: 35px;
   width: 35px;
 }
