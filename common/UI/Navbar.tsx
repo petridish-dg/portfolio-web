@@ -4,13 +4,14 @@ import React from "react";
 
 import Menu from "./Menu";
 import s from "./Navbar.module.scss";
-import globe from "/public/Globe.svg";
+import globe from "/public/globe2.svg";
 
 const Navbar = () => {
   return (
     <nav className={s.navContainer}>
       <div className={s.navWrapper}>
         <m.div
+          className={s.navLogo}
           animate={{ rotate: 360 }}
           transition={{
             ease: "linear",
@@ -19,7 +20,7 @@ const Navbar = () => {
             repeatDelay: 0,
           }}
         >
-          <Image src={globe} alt="globe icon" height={35} width={35} />
+          <Image src={globe} alt="globe icon" fill={true} />
         </m.div>
         <p>
           OPEN FOR ANY

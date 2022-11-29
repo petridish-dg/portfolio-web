@@ -12,5 +12,12 @@
 
 .navWrapper:first-of-type {
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+
+.navLogo {
+  position: relative;
+  height: 35px;
+  width: 35px;
 }
