@@ -9,8 +9,28 @@ import lightningR from "../public/LightningRight.svg";
 import s from "/styles/Home.module.scss";
 
 const Home = () => {
+  const lightningVariants = {
+    animate: {
+      opacity: [0, 1, 0],
+      transition: {
+        type: "easeInOut",
+        duration: 1,
+        repeat: Infinity,
+        repeatDelay: 0.5,
+      },
+    },
+  };
+
+  const subtitleText = [
+    "CHICAGO, IL.",
+    "PORTFOLIO \n ( 2020 — 2022 )",
+    "SCROLL TO EXPLORE ¬",
+  ];
+
   return (
     <>
+      {/* Hero Section */}
+
       <section className={s.heroSection}>
         <div className={s.heroContainer}>
           <div className={s.heroWrapper}>
@@ -22,18 +42,15 @@ const Home = () => {
 
             <div className={s.lightningContainer}>
               <m.div
-                animate={{ opacity: [0, 1, 0] }}
-                transition={{
-                  type: "easeInOut",
-                  duration: 1,
-                  repeat: Infinity,
-                  repeatDelay: 0.5,
-                }}
+                className={s.lightningWrapper}
+                variants={lightningVariants}
+                animate="animate"
               >
                 <Image
+                  className={s.lightning}
                   src={lightningL}
                   alt="lightning"
-                  className={s.lightning}
+                  fill={true}
                 />
               </m.div>
               <h2 className={s.heroSubHead}>
@@ -42,36 +59,27 @@ const Home = () => {
                 Driven by Design.
               </h2>
               <m.div
-                animate={{ opacity: [0, 1, 0] }}
-                transition={{
-                  type: "easeInOut",
-                  duration: 1,
-                  repeat: Infinity,
-                  repeatDelay: 0.5,
-                }}
+                className={s.lightningWrapper}
+                variants={lightningVariants}
+                animate="animate"
               >
                 <Image
+                  className={s.lightning}
                   src={lightningR}
                   alt="lightning"
-                  className={s.lightning}
+                  fill={true}
                 />
               </m.div>
             </div>
           </div>
           <div className={s.heroContent}>
-            <div className={s.contentP}>
-              <p>CHICAGO, IL.</p>
-            </div>
-            <div className={s.contentP}>
-              <p>
-                PORTFOLIO
-                <br />
-                (2020 — 2022)
-              </p>
-            </div>
-            <div className={s.contentP}>
-              <p>SCROLL TO EXPLORE ¬</p>
-            </div>
+            {subtitleText.map((text, index) => {
+              return (
+                <div key={index} className={s.contentP}>
+                  <p>{text}</p>
+                </div>
+              );
+            })}
           </div>
           <div className={s.heroWrapper}>
             <div className={s.heroPContainer}>
@@ -90,10 +98,30 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
-        <Marquee>
-          <p>Branding</p>
-        </Marquee>
+
+      {/* Marquee Section */}
+
+      <section className={s.marqueeSection}>
+        <div className={s.marqueeContainer}>
+          <Marquee direction="left">
+            <p className="h1-style">Identity Systems</p>
+            <p className="h1-style">Branding</p>
+            <p className="h1-style">Identity Systems</p>
+            <p className="h1-style">BrandingPackaging</p>
+          </Marquee>
+          <Marquee direction="right">
+            <p className="h1-style">User Experience</p>
+            <p className="h1-style">User Interaction</p>
+            <p className="h1-style">User Experience</p>
+            <p className="h1-style">User Interaction</p>
+          </Marquee>
+          <Marquee direction="left">
+            <p className="h1-style">Packaging</p>
+            <p className="h1-style">Typography</p>
+            <p className="h1-style">Packaging</p>
+            <p className="h1-style">Typography</p>
+          </Marquee>
+        </div>
       </section>
       <section style={{ height: "100vh" }}></section>
     </>

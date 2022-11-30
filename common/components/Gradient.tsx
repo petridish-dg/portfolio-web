@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion";
 import React from "react";
 
-import s from "./Gradient.module.scss";
+import s from "/styles/components/Gradient.module.scss";
 
 type Props = {
   children: JSX.Element;

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 import Menu from "./Menu";
-import s from "./Navbar.module.scss";
+import s from "/styles/UI/Navbar.module.scss";
 import globe from "/public/globe2.svg";
 
 const Navbar = () => {

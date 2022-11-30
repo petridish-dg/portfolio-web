@@ -2,7 +2,7 @@ import { motion as m, useCycle } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-import s from "./Menu.module.scss";
+import s from "/styles/UI/Menu.module.scss";
 import crossButton from "/public/cross.svg";
 
 const Menu = () => {

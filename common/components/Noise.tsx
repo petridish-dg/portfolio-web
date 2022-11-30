@@ -1,6 +1,6 @@
 import React from "react";
 
-import s from "./Noise.module.scss";
+import s from "/styles/components/Noise.module.scss";
 
 const Noise = () => {
   return (

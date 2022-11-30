@@ -1,6 +1,21 @@
 @import "variables";
 @import url("https://use.typekit.net/wdw5vaa.css");
 
+:root {
+  --padding-global: 2rem;
+
+  font-size: 16px;
+
+  @media (max-width: $tablet) {
+    --padding-global: 1rem;
+    font-size: 14px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
+}
+
 body {
   background-color: $color-background;
   color: $color-text;
@@ -16,13 +31,27 @@ body {
 
 // Typography
 
-h1 {
+h1,
+h1,
+.h1-style {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 5.5rem;
   line-height: 1;
+
+  @media (max-width: $tablet) {
+    font-size: 4.5rem;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 3.5rem;
+  }
 }
 
 h2 {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 2.5rem;
+
+  @media (max-width: $tablet) {
+    font-size: 2rem;
+  }
 }

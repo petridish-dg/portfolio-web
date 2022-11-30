@@ -1,0 +1,17 @@
+.marqueeContainer {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.marqueeTrack {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  display: flex;
+  margin: 0 5rem;
+  
+  gap: 10rem;
+}

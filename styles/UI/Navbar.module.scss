@@ -9,7 +9,7 @@
   z-index: 40;
 
   width: 100%;
-  padding: $padding-global;
+  padding: var(--padding-global);
 }
 
 .navWrapper:first-of-type {
