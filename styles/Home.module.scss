@@ -46,15 +46,18 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
-  margin-bottom: -6rem;
+  gap: 2rem;
+
+  padding-bottom: 4rem;
 
   .heroHead {
     text-align: center;
 
     transition: filter 1s;
+    filter: drop-shadow(0 50px 0.5rem rgb(0, 0, 0));
 
     &:hover {
       filter: blur(20px);
@@ -62,11 +65,12 @@
   }
 
   .heroSubHead {
-    margin-top: 2rem;
     text-align: center;
 
     font-family: aw-conqueror-didot, serif;
     font-weight: 400;
+
+    filter: drop-shadow(0 50px 0.5rem rgb(0, 0, 0));
   }
 }
 
@@ -101,6 +105,8 @@
   justify-content: space-between;
 
   .contentP {
+    filter: drop-shadow(0 50px 0.5rem rgb(0, 0, 0));
+
     flex: 1;
 
     text-align: center;
@@ -115,5 +121,21 @@
     &:nth-of-type(3) {
       justify-content: flex-end;
     }
+  }
+}
+
+.lightningContainer {
+  position: relative;
+
+  width: 90%;
+
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .lightning {
+    position: relative;
   }
 }

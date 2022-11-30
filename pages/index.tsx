@@ -1,10 +1,22 @@
 import { motion as m } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
 import Gradient from "../common/components/Gradient";
+import lightningL from "../public/LightningLeft.svg";
+import lightningR from "../public/LightningRight.svg";
 import s from "/styles/Home.module.scss";
 
 const Home = () => {
+  const lightningVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+    },
+  };
+
   return (
     <>
       <section className={s.heroSection}>
@@ -15,11 +27,48 @@ const Home = () => {
               <br />
               MULTIDISCIPLINARY DESIGNER
             </h1>
-            <h2 className={s.heroSubHead}>
-              Powered by Curiosity,
-              <br />
-              Driven by Design.
-            </h2>
+
+            <div className={s.lightningContainer}>
+              <m.div
+                variants={lightningVariants}
+                initial="initial"
+                animate="animate"
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  ease: "linear",
+                  duration: 0.5,
+                }}
+              >
+                <Image
+                  src={lightningL}
+                  alt="lightning"
+                  className={s.lightning}
+                />
+              </m.div>
+              <h2 className={s.heroSubHead}>
+                Powered by Curiosity,
+                <br />
+                Driven by Design.
+              </h2>
+              <m.div
+                variants={lightningVariants}
+                initial="initial"
+                animate="animate"
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  ease: "linear",
+                  duration: 0.5,
+                }}
+              >
+                <Image
+                  src={lightningR}
+                  alt="lightning"
+                  className={s.lightning}
+                />
+              </m.div>
+            </div>
           </div>
           <div className={s.heroContent}>
             <div className={s.contentP}>
