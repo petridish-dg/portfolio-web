@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 import Gradient from "../common/components/Gradient";
+import Marquee from "../common/components/Marquee";
 import lightningL from "../public/LightningLeft.svg";
 import lightningR from "../public/LightningRight.svg";
 import s from "/styles/Home.module.scss";
@@ -88,6 +89,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <Marquee>
+          <p>Branding</p>
+        </Marquee>
       </section>
       <section style={{ height: "100vh" }}></section>
     </>
