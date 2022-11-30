@@ -8,15 +8,6 @@ import lightningR from "../public/LightningRight.svg";
 import s from "/styles/Home.module.scss";
 
 const Home = () => {
-  const lightningVariants = {
-    initial: {
-      opacity: 0,
-    },
-    animate: {
-      opacity: 1,
-    },
-  };
-
   return (
     <>
       <section className={s.heroSection}>
@@ -30,14 +21,12 @@ const Home = () => {
 
             <div className={s.lightningContainer}>
               <m.div
-                variants={lightningVariants}
-                initial="initial"
-                animate="animate"
+                animate={{ opacity: [0, 1, 0] }}
                 transition={{
+                  type: "easeInOut",
+                  duration: 1,
                   repeat: Infinity,
-                  repeatType: "mirror",
-                  ease: "linear",
-                  duration: 0.5,
+                  repeatDelay: 0.5,
                 }}
               >
                 <Image
@@ -52,14 +41,12 @@ const Home = () => {
                 Driven by Design.
               </h2>
               <m.div
-                variants={lightningVariants}
-                initial="initial"
-                animate="animate"
+                animate={{ opacity: [0, 1, 0] }}
                 transition={{
+                  type: "easeInOut",
+                  duration: 1,
                   repeat: Infinity,
-                  repeatType: "mirror",
-                  ease: "linear",
-                  duration: 0.5,
+                  repeatDelay: 0.5,
                 }}
               >
                 <Image
@@ -97,7 +84,7 @@ const Home = () => {
                   </p>
                 </Gradient>
               </div>
-              <p>© COPYRIGHT 2022</p>
+              {/* <p>© COPYRIGHT 2022</p> */}
             </div>
           </div>
         </div>
